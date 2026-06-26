@@ -4,8 +4,16 @@
 	let {
 		ref = $bindable(null),
 		type = 'button',
+		child = undefined,
+		children,
 		...restProps
 	}: DialogPrimitive.TriggerProps = $props();
 </script>
 
-<DialogPrimitive.Trigger bind:ref data-slot="dialog-trigger" {type} {...restProps} />
+{#if child}
+	<DialogPrimitive.Trigger bind:ref data-slot="dialog-trigger" {type} {child} {...restProps} />
+{:else}
+	<DialogPrimitive.Trigger bind:ref data-slot="dialog-trigger" {type} {...restProps}>
+		{@render children?.()}
+	</DialogPrimitive.Trigger>
+{/if}
