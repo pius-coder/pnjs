@@ -1,9 +1,11 @@
 # PNGS-IE Frontend — DOX Contract
 
 ## Purpose
+
 SvelteKit frontend for Plateforme Nationale de Gestion des Stages, de l'Insertion et de l'Employabilité.
 
 ## Ownership
+
 - **Framework**: SvelteKit 2+ (Svelte 5 runes mode)
 - **Language**: TypeScript
 - **Package Manager**: bun
@@ -12,6 +14,7 @@ SvelteKit frontend for Plateforme Nationale de Gestion des Stages, de l'Insertio
 - **Add-ons**: prettier, eslint, tailwindcss, vitest, playwright, sveltekit-adapter
 
 ## Local Contracts
+
 - API client at `src/lib/api/client.ts` — fetch wrapper with typed errors
 - Theme store at `src/lib/stores/theme.ts` — light/dark/system with localStorage persistence
 - Surface classes in `src/styles/material.css` — window, panel, floating, inset
@@ -19,6 +22,7 @@ SvelteKit frontend for Plateforme Nationale de Gestion des Stages, de l'Insertio
 - All new features follow APEX workflow with worktrees
 
 ## Work Guidance
+
 - shadcn components go in `src/lib/components/ui/`, never modified deeply
 - Feature components go in `src/lib/components/features/`
 - Layout components go in `src/lib/components/layout/`
@@ -27,10 +31,13 @@ SvelteKit frontend for Plateforme Nationale de Gestion des Stages, de l'Insertio
 - Feature logic goes in `src/lib/features/{feature-name}/`
 - Route groups: (public), (auth), (candidate), (company), (institution), (administration), (internal)
 - Design system route at `/internal/design-system`
+- Catalog components in `src/lib/components/features/catalogue/` — per-category component docs
+- Shared `ComponentBlock.svelte` pattern for component documentation sections
 - Spec reference: CAHIER_DE_CHARGE.md
 - Backlog: PLAN.md
 
 ## Verification
+
 - Build: `bun run build`
 - Typecheck: `bun run check`
 - Unit tests: `bun run test:unit`
@@ -38,6 +45,7 @@ SvelteKit frontend for Plateforme Nationale de Gestion des Stages, de l'Insertio
 - Lint: `bun run lint`
 
 ## Child DOX Index
+
 No child AGENTS.md files yet. Create when folder gains durable boundary with its own rules.
 
 - DOX is highly performant AGENTS.md hierarchy installed here
@@ -121,4 +129,15 @@ When the user requests a durable behavior change, record it here or in the relev
 
 ## Child DOX Index
 
-This project is not yet indexed. Before continuing you must scan the project, build the DOX tree and replace this message with the actual index. Go deep and scan files recursively to properly evaluate complexity and create nested DOX files where needed.
+- `src/lib/components/ui/` — 56 shadcn-svelte component dirs (never modify deeply)
+  - Missing `date-picker` / `combobox` — composed via Calendar+Popover+Button / Command+Popover
+- `src/lib/components/features/catalogue/` — Design system catalog sections (FE-02)
+  - `component-block.svelte` — shared wrapper for component doc sections
+  - `category-navigation.svelte` — 11 nav components
+  - `category-actions.svelte` — 9 action components
+  - `category-formulaires.svelte` — 16 form components (incl. DatePicker/Combobox compositions)
+  - `category-donnees.svelte` — 9 data display components
+  - `category-feedback.svelte` — 8 feedback components
+  - `category-contenus.svelte` — 5 content components
+- `src/lib/features/` — feature logic (empty, use per-feature dirs)
+- `src/styles/` — `material.css` (surfaces), `theme.css` (shadows), `typography.css`
