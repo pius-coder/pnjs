@@ -6,9 +6,14 @@
 }
 
 .window-title {
-	font-size: var(--text-lg);
+	font-size: var(--text-sm);
 	font-weight: 600;
 	line-height: 1.3;
+	color: var(--color-muted-foreground);
+}
+
+.window-title--active {
+	color: var(--color-foreground);
 }
 
 .section-title {

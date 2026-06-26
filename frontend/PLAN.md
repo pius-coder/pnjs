@@ -29,7 +29,16 @@
 
 ### FE-01 — Windowed Material Foundation
 
-_Planned_
+**Scope:**
+
+- Depth tokens (shadows, rings, borders, gradients) in theme.css
+- Surface CSS classes with ring/inset-border effects in material.css
+- WindowSurface, WindowHeader, WindowBody, WindowFooter Svelte components
+- PanelSurface, FloatingSurface (with blur), InsetSurface Svelte components
+- All surfaces documented in design system route
+- Light/dark/system mode support via existing theme store
+
+**Status:** In progress (worktree: feat/FE-01-windowed-material-foundation)
 
 ### FE-02 — Catalogue Shadcn
 
