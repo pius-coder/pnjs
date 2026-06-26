@@ -1,0 +1,50 @@
+.window-surface {
+	background-color: var(--color-card);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-lg);
+	box-shadow: var(--window-shadow), var(--contact-shadow);
+	overflow: clip;
+}
+
+.window-header {
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-4);
+	padding: var(--spacing-4) var(--spacing-6);
+	border-bottom: 1px solid var(--color-border);
+}
+
+.window-body {
+	padding: var(--spacing-6);
+}
+
+.window-footer {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: var(--spacing-3);
+	padding: var(--spacing-4) var(--spacing-6);
+	border-top: 1px solid var(--color-border);
+}
+
+.panel-surface {
+	background-color: var(--color-card);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-md);
+	box-shadow: var(--contact-shadow);
+	overflow: clip;
+}
+
+.floating-surface {
+	background-color: var(--color-popover);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-lg);
+	box-shadow: var(--floating-shadow), var(--contact-shadow);
+	overflow: clip;
+}
+
+.inset-surface {
+	background-color: var(--color-muted);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-md);
+}
