@@ -5,7 +5,6 @@
 	import MenuIcon from '@lucide/svelte/icons/menu';
 	import SunIcon from '@lucide/svelte/icons/sun';
 	import MoonIcon from '@lucide/svelte/icons/moon';
-	import { resolve } from '$app/paths';
 	import type { Snippet } from 'svelte';
 
 	let {
@@ -61,10 +60,8 @@
 				</Button>
 			{/if}
 			<div class="mt-4 flex flex-col gap-2">
-				<Button variant="ghost" size="sm" href={resolve('/auth/login')} class="w-full"
-					>Connexion</Button
-				>
-				<Button size="sm" href={resolve('/auth/register')} class="w-full">Inscription</Button>
+				<Button variant="ghost" size="sm" href="/auth/login" class="w-full">Connexion</Button>
+				<Button size="sm" href="/auth/register" class="w-full">Inscription</Button>
 			</div>
 		</div>
 	</Sheet.Content>

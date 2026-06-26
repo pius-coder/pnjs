@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
 </script>
 
 <footer class="border-t py-8">
@@ -15,35 +14,26 @@
 				<h3 class="mb-3 text-sm font-semibold">Stages</h3>
 				<ul class="space-y-2 text-xs">
 					<li>
-						<a href={resolve('/stages')} class="text-muted-foreground hover:text-foreground"
-							>Offres de stage</a
+						<a href="/stages" class="text-muted-foreground hover:text-foreground">Offres de stage</a
 						>
 					</li>
 					<li>
-						<a href={resolve('/entreprises')} class="text-muted-foreground hover:text-foreground"
+						<a href="/entreprises" class="text-muted-foreground hover:text-foreground"
 							>Entreprises</a
 						>
 					</li>
 					<li>
-						<a href={resolve('/candidats')} class="text-muted-foreground hover:text-foreground"
-							>Candidats</a
-						>
+						<a href="/candidats" class="text-muted-foreground hover:text-foreground">Candidats</a>
 					</li>
 				</ul>
 			</div>
 			<div>
 				<h3 class="mb-3 text-sm font-semibold">Ressources</h3>
 				<ul class="space-y-2 text-xs">
+					<li><a href="/aide" class="text-muted-foreground hover:text-foreground">Aide</a></li>
+					<li><a href="/faq" class="text-muted-foreground hover:text-foreground">FAQ</a></li>
 					<li>
-						<a href={resolve('/aide')} class="text-muted-foreground hover:text-foreground">Aide</a>
-					</li>
-					<li>
-						<a href={resolve('/faq')} class="text-muted-foreground hover:text-foreground">FAQ</a>
-					</li>
-					<li>
-						<a href={resolve('/contact')} class="text-muted-foreground hover:text-foreground"
-							>Contact</a
-						>
+						<a href="/contact" class="text-muted-foreground hover:text-foreground">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -51,20 +41,16 @@
 				<h3 class="mb-3 text-sm font-semibold">Légal</h3>
 				<ul class="space-y-2 text-xs">
 					<li>
-						<a
-							href={resolve('/mentions-legales')}
-							class="text-muted-foreground hover:text-foreground">Mentions légales</a
+						<a href="/mentions-legales" class="text-muted-foreground hover:text-foreground"
+							>Mentions légales</a
 						>
 					</li>
 					<li>
-						<a
-							href={resolve('/confidentialite')}
-							class="text-muted-foreground hover:text-foreground">Confidentialité</a
+						<a href="/confidentialite" class="text-muted-foreground hover:text-foreground"
+							>Confidentialité</a
 						>
 					</li>
-					<li>
-						<a href={resolve('/cgus')} class="text-muted-foreground hover:text-foreground">CGUs</a>
-					</li>
+					<li><a href="/cgus" class="text-muted-foreground hover:text-foreground">CGUs</a></li>
 				</ul>
 			</div>
 		</div>

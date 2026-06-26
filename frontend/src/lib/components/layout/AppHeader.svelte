@@ -4,7 +4,6 @@
 	import { theme, type ThemeMode } from '$lib/stores/theme.js';
 	import SunIcon from '@lucide/svelte/icons/sun';
 	import MoonIcon from '@lucide/svelte/icons/moon';
-	import { resolve } from '$app/paths';
 	import type { Snippet } from 'svelte';
 
 	let {
@@ -62,8 +61,8 @@
 			</Button>
 		{/if}
 		{#if showAuth}
-			<Button variant="ghost" size="sm" href={resolve('/auth/login')}>Connexion</Button>
-			<Button size="sm" href={resolve('/auth/register')}>Inscription</Button>
+			<Button variant="ghost" size="sm" href="/auth/login">Connexion</Button>
+			<Button size="sm" href="/auth/register">Inscription</Button>
 		{/if}
 		{@render children?.()}
 	</div>
