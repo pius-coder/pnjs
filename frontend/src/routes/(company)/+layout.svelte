@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import * as Sidebar from '$lib/components/ui/sidebar/index.js';
 	import AppSidebar from '$lib/components/layout/AppSidebar.svelte';
 	import { SidebarTrigger } from '$lib/components/ui/sidebar/index.js';
@@ -20,42 +21,42 @@
 				<Sidebar.MenuItem>
 					<Sidebar.MenuButton tooltipContent="Tableau de bord">
 						{#snippet child({ props })}
-							<a href="/company/dashboard" {...props}>Tableau de bord</a>
+							<a href={resolve('/company/dashboard')} {...props}>Tableau de bord</a>
 						{/snippet}
 					</Sidebar.MenuButton>
 				</Sidebar.MenuItem>
 				<Sidebar.MenuItem>
 					<Sidebar.MenuButton tooltipContent="Offres de stage">
 						{#snippet child({ props })}
-							<a href="/company/offres" {...props}>Offres de stage</a>
+							<a href={resolve('/company/offres')} {...props}>Offres de stage</a>
 						{/snippet}
 					</Sidebar.MenuButton>
 				</Sidebar.MenuItem>
 				<Sidebar.MenuItem>
 					<Sidebar.MenuButton tooltipContent="Candidatures">
 						{#snippet child({ props })}
-							<a href="/company/candidatures" {...props}>Candidatures</a>
+							<a href={resolve('/company/candidatures')} {...props}>Candidatures</a>
 						{/snippet}
 					</Sidebar.MenuButton>
 				</Sidebar.MenuItem>
 				<Sidebar.MenuItem>
 					<Sidebar.MenuButton tooltipContent="Équipe">
 						{#snippet child({ props })}
-							<a href="/company/equipe" {...props}>Équipe</a>
+							<a href={resolve('/company/equipe')} {...props}>Équipe</a>
 						{/snippet}
 					</Sidebar.MenuButton>
 				</Sidebar.MenuItem>
 				<Sidebar.MenuItem>
 					<Sidebar.MenuButton tooltipContent="Messages">
 						{#snippet child({ props })}
-							<a href="/company/messages" {...props}>Messages</a>
+							<a href={resolve('/company/messages')} {...props}>Messages</a>
 						{/snippet}
 					</Sidebar.MenuButton>
 				</Sidebar.MenuItem>
 				<Sidebar.MenuItem>
 					<Sidebar.MenuButton tooltipContent="Paramètres">
 						{#snippet child({ props })}
-							<a href="/company/parametres" {...props}>Paramètres</a>
+							<a href={resolve('/company/parametres')} {...props}>Paramètres</a>
 						{/snippet}
 					</Sidebar.MenuButton>
 				</Sidebar.MenuItem>
