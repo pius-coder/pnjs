@@ -38,15 +38,30 @@
 - All surfaces documented in design system route
 - Light/dark/system mode support via existing theme store
 
-**Status:** In progress (worktree: feat/FE-01-windowed-material-foundation)
+**Status:** Done
 
 ### FE-02 — Catalogue Shadcn
 
-_Planned_
+**Scope:**
+
+- 6 category components (Navigation, Actions, Formulaires, Données, Feedback, Contenus)
+- ComponentBlock.svelte shared wrapper with install command and live demo
+- 56 installed shadcn-svelte components documented
+- DatePicker/Combobox documented as compositions
+
+**Status:** Done
 
 ### FE-03 — Layouts
 
-_Planned_
+**Scope:**
+
+- Route group layouts for (public), (auth), (candidate), (company), (institution), (administration)
+- Public layout: AppHeader with NavigationMenu, theme toggle, auth buttons; AppFooter
+- Auth layout: centered PanelSurface card
+- Sidebar layouts: Sidebar.Provider + AppSidebar with nav items + Sidebar.Inset content area
+- Shared components: AppHeader, AppSidebar, AppFooter, MobileNav
+
+**Status:** Done
 
 ### FE-04 — Session et guards
 
