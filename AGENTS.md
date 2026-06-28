@@ -10,6 +10,7 @@
 - `.opencode/skills/workflow-apex/` possède le workflow APEX.
 - `.opencode/plugins/` possède les plugins opencode (auto-découverts).
 - `.opencode/commands/apex.md` expose la commande `/apex`.
+- `contract.ts` possède les types partagés (rôles, statuts, formats API) — aucune dépendance Svelte/Elysia.
 - Git possède l'historique ; les `AGENTS.md` ne doivent contenir aucun journal de changements.
 
 ## Core Contract
